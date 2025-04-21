@@ -1,11 +1,8 @@
 import React from "react";
+import Display from "./components/Display";
 
 function App() {
-  return (
-    <div>
-      <h2>GA SEB</h2>
-    </div>
-  );
+  return <Display />;
 }
 
 export default App;
