@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import UsersDel from "./UsersDel";
 
 const Users = () => {
   const [user, setUser] = useState([]);
@@ -84,14 +85,25 @@ const Users = () => {
       </div>
 
       {user.map((item, index) => (
-        <div className="row" key={index}>
-          <div className="col-md-3">{item.name}</div>
-          <div className="col-md-3">{item.age}</div>
-          <div className="col-md-3">{item.country}</div>
-        </div>
+        <UsersDel
+          key={index}
+          name={item.name}
+          age={item.age}
+          country={item.country}
+          user_id={item.id}
+          getData={getData}
+        />
       ))}
     </div>
   );
 };
 
 export default Users;
+
+//   {user.map((item, index) => (
+//     <div className="row" key={index}>
+//       <div className="col-md-3">{item.name}</div>
+//       <div className="col-md-3">{item.age}</div>
+//       <div className="col-md-3">{item.country}</div>
+//     </div>
+//   ))}

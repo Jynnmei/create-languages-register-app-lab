@@ -12,7 +12,7 @@ const Languages = (props) => {
     if (res.ok) {
       props.getData();
     } else {
-      alert("an error has occurred");
+      alert("Delete failed");
     }
   };
   return (
