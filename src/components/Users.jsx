@@ -100,10 +100,3 @@ const Users = () => {
 
 export default Users;
 
-//   {user.map((item, index) => (
-//     <div className="row" key={index}>
-//       <div className="col-md-3">{item.name}</div>
-//       <div className="col-md-3">{item.age}</div>
-//       <div className="col-md-3">{item.country}</div>
-//     </div>
-//   ))}
