@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import Languages from "./Languages";
 
 const Display = () => {
   const [languages, setLanguages] = useState([]);
@@ -68,10 +69,12 @@ const Display = () => {
       </div>
 
       {languages.map((item, index) => (
-        <div className="row" key={index}>
-          <div className="col-md-3">{item.language}</div>
-          <div className="col-md-3">{item.created_at}</div>
-        </div>
+        <Languages
+          key={index}
+          language={item.language}
+          created_at={item.created_at}
+          getData={getData}
+        />
       ))}
     </div>
   );
