@@ -33,6 +33,18 @@ const OverLay = (props) => {
         <div className={styles.modal}>
           <div className="row">
             <div className="col-md-3"></div>
+            <div className="col-md-3">User ID</div>
+            <input
+              value={props.id}
+              type="text"
+              className="col-md-3"
+              readOnly
+              disabled
+            ></input>
+          </div>
+
+          <div className="row">
+            <div className="col-md-3"></div>
             <div className="col-md-3">Name</div>
             <input
               ref={nameRef}

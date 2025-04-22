@@ -34,9 +34,10 @@ const UsersDel = (props) => {
       )}
 
       <div className="row">
-        <div className="col-md-3">{props.name}</div>
-        <div className="col-md-3">{props.age}</div>
-        <div className="col-md-3">{props.country}</div>
+        <div className="col-md-2">{props.userId}</div>
+        <div className="col-md-2">{props.name}</div>
+        <div className="col-md-2">{props.age}</div>
+        <div className="col-md-2">{props.country}</div>
         <button className="col-sm-1" onClick={deleteUser}>
           delete
         </button>

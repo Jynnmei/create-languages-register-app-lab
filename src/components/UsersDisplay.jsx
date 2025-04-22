@@ -62,7 +62,7 @@ const UsersDisplay = () => {
           className="col-md-3"
         ></input>
         <input
-          type="text"
+          type="number"
           ref={ageRef}
           placeholder="age"
           className="col-md-3"
@@ -79,18 +79,20 @@ const UsersDisplay = () => {
       </div>
 
       <div className="row">
-        <div className="col-md-3">Name</div>
-        <div className="col-md-3">Age</div>
-        <div className="col-md-3">Country</div>
+        <div className="col-md-2">ID</div>
+        <div className="col-md-2">Name</div>
+        <div className="col-md-2">Age</div>
+        <div className="col-md-2">Country</div>
+        <div className="col-md-2">Actions</div>
       </div>
 
       {user.map((item, index) => (
         <UsersDel
           key={index}
+          userId={item.id}
           name={item.name}
           age={item.age}
           country={item.country}
-          userId={item.id}
           getData={getData}
         />
       ))}
