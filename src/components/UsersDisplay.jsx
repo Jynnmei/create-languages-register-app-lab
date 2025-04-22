@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import UsersDel from "./UsersDel";
 
-const Users = () => {
+const UsersDisplay = () => {
   const [user, setUser] = useState([]);
   const nameRef = useRef();
   const ageRef = useRef();
@@ -98,5 +98,4 @@ const Users = () => {
   );
 };
 
-export default Users;
-
+export default UsersDisplay;

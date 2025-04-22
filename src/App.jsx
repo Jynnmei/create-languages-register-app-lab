@@ -1,9 +1,8 @@
 import React from "react";
-import Display from "./components/Display";
-import Users from "./components/Users";
+import UsersDisplay from "./components/UsersDisplay";
 
 function App() {
-  return <Users />;
+  return <UsersDisplay />;
 }
 
 export default App;

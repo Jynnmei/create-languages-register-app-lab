@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Languages from "./Languages";
 
-const Display = () => {
+const LanguageDisplay = () => {
   const [languages, setLanguages] = useState([]);
   const languageRef = useRef();
   const createdAtRef = useRef();
@@ -80,4 +80,4 @@ const Display = () => {
   );
 };
 
-export default Display;
+export default LanguageDisplay;

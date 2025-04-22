@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Languages = (props) => {
-  const [updateLanguages, setUpdateLanguages] = useState(false);
-
   const deleteLanguages = async () => {
     const res = await fetch(
       import.meta.env.VITE_SERVER + "/lab/languages/" + props.language,
@@ -12,7 +10,7 @@ const Languages = (props) => {
     if (res.ok) {
       props.getData();
     } else {
-      alert("Delete failed");
+      alert("Language delete failed");
     }
   };
   return (
