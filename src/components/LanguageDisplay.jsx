@@ -72,7 +72,7 @@ const LanguageDisplay = () => {
         <Languages
           key={index}
           language={item.language}
-          created_at={item.created_at}
+          createdAt={item.created_at}
           getData={getData}
         />
       ))}

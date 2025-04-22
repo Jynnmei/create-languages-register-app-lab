@@ -90,7 +90,7 @@ const UsersDisplay = () => {
           name={item.name}
           age={item.age}
           country={item.country}
-          user_id={item.id}
+          userId={item.id}
           getData={getData}
         />
       ))}

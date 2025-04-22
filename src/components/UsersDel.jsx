@@ -9,7 +9,7 @@ const UsersDel = (props) => {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        user_id: props.user_id,
+        user_id: props.userId,
       }),
     });
 
@@ -24,7 +24,7 @@ const UsersDel = (props) => {
     <>
       {showUpdateUser && (
         <UpdateUser
-          id={props.user_id}
+          id={props.userId}
           name={props.name}
           age={props.age}
           country={props.country}

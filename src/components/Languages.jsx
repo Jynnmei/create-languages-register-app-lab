@@ -16,7 +16,7 @@ const Languages = (props) => {
   return (
     <div className="row">
       <div className="col-sm-3">{props.language}</div>
-      <div className="col-sm-3">{props.created_at}</div>
+      <div className="col-sm-3">{props.createdAt}</div>
       <button className="col-sm-2" onClick={deleteLanguages}>
         delete
       </button>

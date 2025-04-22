@@ -3,22 +3,11 @@ import styles from "./User.module.css";
 import ReactDOM from "react-dom";
 
 const OverLay = (props) => {
-  // const idRef = useRef();
   const nameRef = useRef();
   const ageRef = useRef();
   const countryRef = useRef();
 
   const updateUsers = async () => {
-    console.log("UpdateUser props:", props);
-
-    console.log("Sending update:", {
-      id: props.id,
-      name: nameRef.current.value,
-      age: ageRef.current.value,
-      country: countryRef.current.value,
-    });
-
-    console.log(import.meta.env.VITE_SERVER + "/lab/users");
     const res = await fetch(import.meta.env.VITE_SERVER + "/lab/users", {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
