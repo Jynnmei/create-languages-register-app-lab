@@ -92,6 +92,15 @@ const UserLanguagesDisplay = () => {
             Add
           </button>
 
+          <div className="row">
+            <div className="col-md-3">
+              <strong>User ID</strong>
+            </div>
+            <div className="col-md-3">
+              <strong>Language</strong>
+            </div>
+          </div>
+
           {userLanguages.map((language, index) => (
             <UserLanguagesDel
               key={index}

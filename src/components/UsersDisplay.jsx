@@ -79,11 +79,21 @@ const UsersDisplay = () => {
       </div>
 
       <div className="row">
-        <div className="col-md-2">ID</div>
-        <div className="col-md-2">Name</div>
-        <div className="col-md-2">Age</div>
-        <div className="col-md-2">Country</div>
-        <div className="col-md-2">Actions</div>
+        <div className="col-md-2">
+          <strong>User ID</strong>
+        </div>
+        <div className="col-md-2">
+          <strong>Name</strong>
+        </div>
+        <div className="col-md-2">
+          <strong>Age</strong>
+        </div>
+        <div className="col-md-2">
+          <strong>Country</strong>
+        </div>
+        <div className="col-md-2">
+          <strong>Actions</strong>
+        </div>
       </div>
 
       {user.map((item, index) => (

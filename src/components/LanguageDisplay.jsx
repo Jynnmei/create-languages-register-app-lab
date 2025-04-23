@@ -64,8 +64,12 @@ const LanguageDisplay = () => {
       </div>
 
       <div className="row">
-        <div className="col-md-3">Language:</div>
-        <div className="col-md-3">Created at:</div>
+        <div className="col-md-3">
+          <strong>Language</strong>
+        </div>
+        <div className="col-md-3">
+          <strong>Created at</strong>
+        </div>
       </div>
 
       {languages.map((item, index) => (
